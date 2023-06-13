@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "yashzinz.github.io",
+			"path": "."
+		},
+		{
+			"name": "Graphik-Font-Family",
+			"path": "../../../../Downloads/Graphik-Font-Family"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "yashzinz.github.io"
+	}
+}

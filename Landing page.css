@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Orbit&family=Overpass&family=PT+Sans&family=Poppins:wght@500&family=Ubuntu&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e7ecea;
+    box-sizing: border-box;
+}
+body{
+    height: 300vh;
+}
+header{
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s ease;
+    padding: 50px 120px;
+    position: sticky;
+}
+@font-face {
+    font-family: GraphikBold;
+    src: url(GraphikBold.otf);
+}
+.title{
+    text-decoration: none;
+    font-size: 55px;
+    color: #000;
+    font-family: GraphikBold;
+}
+.a{
+    width: 25px;
+    height: 8px;
+    background-color: #007cf9;
+    transition: .1s ease;
+    position: absolute;
+    top: 103px;
+    left: 160px;
+}
+
+nav{
+    position: relative;
+    margin-left: 150px;
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;   
+    transition: .3s ease;
+    color: #000;
+    font-family: GraphikRegular;
+}
+nav a:before{
+    content: '';
+    position: absolute;
+    width:0%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 20px;
+    bottom: -5px;
+    left: 0;
+    transition: .5s ease;
+}
+nav a:hover:before{
+    width: 100%;
+}
+
+
+
+.searchbar{
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 220px;
+}
+.searchbar .input{
+    border: 0;
+    outline: none;
+    background-color: white;
+    width: 140px;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 1px  2px #838383 ;
+
+}
+.icon{
+    background-color: white;
+    margin-right: 15px;
+    margin-bottom: -3px;
+}
+
+@font-face {
+    font-family: GraphikRegular;
+    src: url(GraphikRegular.otf);
+}
+
+
+.donate{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    background-color: #007cf9;
+    padding: 10px;
+    color: white;
+    font-family: GraphikRegular;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.mainheading{
+    padding: 50px 210px;
+}
+.toplinks{
+    padding-bottom: 10px;
+}
+.toplinks a{
+    font-family: 'Orbit', sans-serif;
+    font-size: 14px;
+    color: #007cf9;
+
+}
+
+.L1{
+    padding-right: 15px;
+}
+.toplinks .break{
+    width: 2px;
+    height: 17px;
+    background-color: #0000002d;
+    position: absolute;
+    top: 210px;
+    left: 301px;
+}
+
+.toplinks a:hover{
+    color: purple;
+}
+.heading{
+    font-size: 80px;
+    font-family: GraphikBold;
+}
+.bottomlinks{
+    margin-top: 20px;
+}
+.bottomlinks .link1, .link2{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    color: #444444;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, #007cf9 0px 3px 7px -3px;
+    font-family: GraphikRegular;
+    transition: .3s ease;
+}
+
+.link1{
+    margin-right: 20px;
+}
+
+.hiddendes{
+    display: none;
+    position: absolute;
+    top: 400px;
+    width: 274px;
+    height: 250px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.img1{
+    padding: 15px;
+    position: relative;
+    left: 4px;
+    top: 4px;
+    width: 190px;
+    height: 130px;
+    background-color: white;
+}
+@font-face {
+    font-family: GraphikLight;
+    src: url(GraphikLight.otf);
+}
+.p1{
+    padding-left: 18px;
+    padding-bottom: 19px;
+    font-size: 15px;
+    font-family: GraphikLight;
+    background-color: white;
+
+}
+.seehow{
+    margin-left: 18px;
+    color: #007cf9;
+    font-family: GraphikLight;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: white;
+}
+.bottomlinks .link1:hover, .link2:hover{
+    color: white;
+    background-color: #007cf9;
+    box-shadow: none;
+}
+.bottomlinks .link1:hover+ .hiddendes{
+    display: block;
+}
+
+.hiddendes2{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 400px;
+    left: 450px;
+    width: 274px;
+    height: 140px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.p2{
+    font-size: 50px;
+    font-family:  GraphikBold;
+    background-color: white;
+}
+.p3{
+    font-family: GraphikLight;
+    background-color: white;
+}
+.hiddendes2 a{
+    font-family: GraphikLight;
+    color: #007cf9;
+    background-color: white;
+}
+.bottomlinks .link2:hover+ .hiddendes2{
+    display: block;
+}
+.maincontent img{
+    width: 100%;
+    height: 100%;
+}
+
+.mchead{
+    position: absolute;
+    top: 700px;
+    left: 140px;
+    width: 500px;
+    background-color: #00000000;
+    font-size: 60px;
+    color: white;
+    font-family: GraphikBold;
+}
+.mccontent{
+    position: absolute;
+    top: 840px;
+    left: 140px;
+    width: 490px;
+    letter-spacing: -.2px;
+    line-height: 28px;
+    background-color: #00000000;
+    color: white;
+    font-size: 20px;
+    font-family: GraphikRegular;
+}
+
+.no1, .no2, .no3 {
+    position: absolute;
+    color: white;
+    top: 1150px;
+    left: 140px;
+    font-size: 80px;
+    background-color: #00000000;
+    font-family: GraphikBold;
+}
+.no2 {
+    left: 540px;
+}
+.no3{
+    left: 980px;
+}
+.sub1, .sub2, .sub3{
+    position: absolute;
+    top: 1250px;
+    left: 140px;
+    color: white;
+    background-color: #00000000;
+    font-size: 20px;
+    font-family: GraphikRegular;
+    letter-spacing: -.2px;
+    width: 300px;
+    line-height: 28px;
+}
+.sub2{
+    left: 540px;
+}
+.sub3{
+    left: 980px;
+}
+.mc3{
+    font-size: 44px;
+    margin-left: 250px;
+    margin-top: 150px;
+    width: 1000px;
+    font-family: GraphikBold;
+}
+span{
+    color: #007cf9;
+}
+
+
+.elephant img{
+    width: 1000px;
+    height: 600px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+
+.rescuehead{
+    font-size: 60px;
+    font-family: GraphikBold;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.rescuelinks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+
+
+.res1{
+    width:274px;
+    height: 471px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    
+}
+.res2{
+    width:274px;
+    height: 471px;
+    background-color: white;
+
+}
+.res3{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res4{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res5{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res6{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res7{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res8{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res9{
+    width:274px;
+    height: 471px;
+    background-color: white;
+}
+.res10{
+    width:274px;
+    height: 471px;
+    background-color: white;
+    position: relative;
+    right: 175px;
+}
+.res11{
+    width:274px;
+    height: 471px;
+    background-color: white;
+    position: relative;
+    right:180px;
+}
+
+
+@media (max-width: 1192px){
+    .searchbar {
+        right: 142px;
+    }
+    nav {
+        margin-left: -172px;
+    }
+}

@@ -1,0 +1,13 @@
+#272727-BLACK
+#747474-GREY
+#FF652F-ORANGE
+#FFE400-YELLOW
+#14A76C-GREEN
+#DA7B93-PINK
+#F172A1-ANOTHER PINK
+#0f0f0f-ANOTHER BLACK
+  <img src="/images/elephantkeeper.jpg">
+  img{
+    filter: brightness(90%);
+    background: linear-gradient(180deg,rgba(0,0,0,0),#000);
+}
