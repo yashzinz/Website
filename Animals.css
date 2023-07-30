@@ -11,6 +11,10 @@
     font-family: GraphikLight;
     src: url(/fonts/GraphikLight.otf);
 }
+@font-face {
+    font-family: Akkurat;
+    src: url(/fonts/Akkurat.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +25,6 @@ body{
     overflow-x: hidden;
 
 }
-/*Header styling and positioning*/
 header{
     z-index: 999;
     top: 0;
@@ -120,284 +123,108 @@ nav a:hover:before{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
-/*Main section heading and top & bottom links */
-.mainheading{
-    padding: 50px 210px;
-}
-.toplinks{
-    padding-bottom: 10px;
-}
-.toplinks a{
-    font-family: 'Orbit', sans-serif;
-    font-size: 14px;
-    color: #007cf9;
-
+/*CONTAINS HEADING, PARAGRAPH DESCRIPTION AND A CONTENT BREAK*/
+.maincontent{
+    margin-left: 200px;
+    margin-top: 50px;    
 }
 
-.L1{
-    padding-right: 15px;
-}
-.toplinks .break{
-    width: 2px;
-    height: 17px;
-    background-color: #0000002d;
-    position: absolute;
-    top: 210px;
-    left: 301px;
-}
-
-.toplinks a:hover{
-    color: purple;
-}
-.heading{
-    font-size: 80px;
+/*heading*/
+.maincontent h1{
+    font-size: 76px;
     font-family: GraphikBold;
+    width: 800px; 
 }
-.bottomlinks{
-    margin-top: 20px;
-}
-.bottomlinks .link1, .link2{
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    color: #444444;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, #007cf9 0px 3px 7px -3px;
+
+.maincontent p{
+    font-size: 20px;
     font-family: GraphikRegular;
-    transition: .3s ease;
+    margin-top: 40px;    
+    line-height: 1.15;
+    padding-bottom: 100px;
+    width: 800px; 
 }
 
-.link1{
-    margin-right: 20px;
-}
-
-.hiddendes{
-    display: none;
-    position: absolute;
-    top: 400px;
-    width: 200px;
-    height: 250px;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.img1{
-    padding: 15px;
-    position: relative;
-    left: 4px;
-    top: 4px;
-    width: 190px;
-    height: 130px;
-    background-color: white;
-}
-
-.p1{
-    padding-left: 18px;
-    padding-bottom: 19px;
-    font-size: 15px;
-    font-family: GraphikLight;
-    background-color: white;
-
-}
-.seehow{
-    margin-left: 18px;
-    color: #007cf9;
-    font-family: GraphikLight;
-    font-size: 15px;
-    letter-spacing: 1px;
-    background-color: white;
-}
-.bottomlinks .link1:hover, .link2:hover{
-    color: white;
+.maincontent .contentbreak{
+    width: 1300px;
+    height: 3px;
     background-color: #007cf9;
-    box-shadow: none;
-}
-.bottomlinks .link1:hover+ .hiddendes{
-    display: block;
+    margin-left: -80px;
 }
 
-.hiddendes2{
-    display: none;
-    position: absolute;
-    padding-top: 10px;
-    padding-left: 10px;
-    top: 400px;
-    left: 450px;
-    width: 274px;
-    height: 140px;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.p2{
-    font-size: 50px;
-    font-family:  GraphikBold;
-    background-color: white;
-}
-.p3{
-    font-family: GraphikLight;
-    background-color: white;
-}
-.hiddendes2 a{
-    font-family: GraphikLight;
-    color: #007cf9;
-    background-color: white;
-}
-.bottomlinks .link2:hover+ .hiddendes2{
-    display: block;
-}
 
-/*Main image and overlap text/statistics*/
-.maincontent img{
-    width: 100%;
-    height: 100%;
-}
-
-.mchead{
-    position: absolute;
-    top: 700px;
-    left: 140px;
-    width: 500px;
-    background-color: #00000000;
-    font-size: 60px;
-    color: white;
-    font-family: GraphikBold;
-}
-.mccontent{
-    position: absolute;
-    top: 840px;
-    left: 140px;
-    width: 490px;
-    letter-spacing: -.2px;
-    line-height: 28px;
-    background-color: #00000000;
-    color: white;
-    font-size: 20px;
-    font-family: GraphikRegular;
-}
-
-.no1, .no2, .no3 {
-    position: absolute;
-    color: white;
-    top: 1150px;
-    left: 140px;
-    font-size: 80px;
-    background-color: #00000000;
-    font-family: GraphikBold;
-}
-.no2 {
-    left: 540px;
-}
-.no3{
-    left: 980px;
-}
-.sub1, .sub2, .sub3{
-    position: absolute;
-    top: 1250px;
-    left: 140px;
-    color: white;
-    background-color: #00000000;
-    font-size: 20px;
-    font-family: GraphikRegular;
-    letter-spacing: -.2px;
-    width: 300px;
-    line-height: 28px;
-}
-.sub2{
-    left: 540px;
-}
-.sub3{
-    left: 980px;
-}
-/*Objective image and text*/
-.mc3{
-    font-size: 44px;
-    margin-left: 250px;
-    margin-top: 150px;
-    width: 1000px;
-    font-family: GraphikBold;
-}
-span{
-    color: #007cf9;
-}
-
-.elephant img{
-    width: 1000px;
-    height: 600px;
-    margin-left: 250px;
-    margin-top: 150px;
-}
-
-/*Rescue project links*/
-.rescuehead{
-    font-size: 60px;
-    font-family: GraphikBold;
-    margin-left: 400px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.rescuelinks{
+.animalinfo{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 30px;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-right: 150px;
+    margin-top: 60px;
     cursor: pointer;
+    background-color: #e7ecea;
+    position: relative;
+    left: 60px;
 
 }
-.rescuelinks h5{
+.link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8 , .link9, .link10, .link10, .link11, .link12{
+    width:284px;
+    height: 496px;
     background-color: white;
-    font-family: Akkurat;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 10px;
-    margin-left: 20px;
-    font-weight: 100;
-    letter-spacing: 1px;
-
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transition: 0.5s all ease-in-out;
 }
-.rescuelinks p{
-    background-color: white;
+
+.animalinfo h5{
     font-size: 22px;
-    line-height: 24px;
-    letter-spacing: -.22px;
     font-family: GraphikBold;
     margin-left: 20px;
     margin-bottom: 10px;
     width: 250px;
 }
-.rescuelinks a{
+.animalinfo p{
+    font-family: Akkurat;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.animalinfo a{
     background-color: white;
-    padding-left: 20px;
+    padding-left:20px;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 1px;
     font-family: Akkurat;
 }
-.rescuelinks img{
+
+.vidonhover{
+    opacity: 0;
+    margin-top: -300px;
+    margin-left: 100px;
+}
+.animalinfo a:hover+ .vidonhover{
+    opacity: 1;
+}
+.animalinfo img{
+    width: 284px;
     height: 250px;
 }
-.res1, .res2, .res3, .res4, .res5, .res6, .res7, .res8{
-    width:274px;
-    height: 471px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    transition: 0.5s all ease-in-out;
-}
-.res1:hover, .res2:hover,  .res3:hover, .res4:hover, .res5:hover, .res6:hover, .res7:hover, .res8:hover{
+
+.link1:hover, .link2:hover,  .link3:hover, .link4:hover, .link5:hover, .link6:hover, .link7:hover, .link8:hover, .link9:hover, .link10:hover, .link11:hover, .link12:hover{
     transform: scale(1.1);
 }
 
-
-/*Footer*/
+/*FOOTER*/
 .footer{
     background-color: white;
     margin-top: 50px;
     height: 800px;
 }
-
-
-
 .footersub{
     margin-top: 50px;
     padding-left: 150px;
@@ -506,4 +333,3 @@ span{
     font-size: 14px;
     line-height: 2;
 }
-
