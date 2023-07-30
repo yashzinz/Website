@@ -123,7 +123,7 @@ nav a:hover:before{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
-/*CONTAINS HEADIND, PARAGRAPH DESCRIPTION AND A CONTENT BREAK*/
+/*INTRODUCTION AND MAIN CONTENT WITH ANIMATION*/
 .maincontent{
     margin-left: 200px;
     margin-top: 50px;    
@@ -192,7 +192,7 @@ nav a:hover:before{
     height: 42%;
     position: absolute;
     left: 818px;
-    top: 1550px;
+    top: 1610px;
 }
 /*POSITION CHANGE FOR CONTENT WRAPPED IN CONTENT2*/
 .content2 p{
